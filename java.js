@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded",function(){
             document.querySelector(".rre").textContent="cannot be null"
         }
 
+        console.log("hello world!")
+
 
     }
 })

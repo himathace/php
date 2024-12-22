@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded",function(){
-    document.querySelector(".form").onsubmit=function(){
-        if(document.querySelector("#hi").value=""){
-            document.querySelector(".rre").textContent="cannot be null"
+    document.querySelector(".form").addEventListener("onsubmit",function(){
+        let fullname=document.querySelector("#hi").value
+        if(fullname===""){
+            let newelement=document.createElement("span")
+            newelement.textContent="name cannot be empty!"
+            document.querySelector("#first").appendChild(newelement)
         }
 
-        console.log("hello world!")
 
-
-    }
+    })
 })

@@ -6,7 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="userform.css" rel="stylesheet">
-    <script src="java.js"></script>
+    <script>
+        
+
+        function myvalue(bob){
+
+            if(bob.children[0].value===""){
+                let newelement=document.createElement("span")
+                newelement.textContent="Field cannot be empty!"
+                newelement.style.fontSize="13px"
+                newelement.style.color="red"
+                bob.appendChild(newelement)
+                return false
+            }
+            return true
+        }
+
+
+        document.addEventListener("DOMContentLoaded",function(){
+            document.querySelector(".form").onsubmit=function(){
+                
+                let demi=document.querySelectorAll("#first")
+                let isValid=true
+                demi.forEach(function(bob){
+                    if(!myvalue(bob)){
+                        isValid=false;
+                    }   
+                });
+                if(!isValid){
+                    return false// or event.preventDefault()
+                }
+            }
+        })
+    </script>
 </head>
 <body>
 
@@ -21,7 +53,7 @@
                 <label>FullName</label>
             </div>
 
-            <div class="new">
+            <div class="new" id="first">
                 <input type="text" placeholder="FullName" name="firstname" class="input" id="hi">
             </div>
             
@@ -29,48 +61,48 @@
                 <label>UserName</label>
             </div>
 
-            <div class="new">
-                <input type="text" placeholder="FirstName" name="lastname" class="input">
+            <div class="new" id="first">
+                <input type="text" placeholder="FirstName" name="lastname" class="input" id="second">
             </div>
             
             <div class="new">
                 <label>E-mail</label>
             </div>
 
-            <div class="new">
-                <input type="email" placeholder="FirstName" name="email" class="input">
+            <div class="new" id="first">
+                <input type="email" placeholder="FirstName" name="email" class="input" id="thred">
             </div>
             
             <div class="new">
                 <label>Password</label>
             </div>
 
-            <div class="new">
-                <input type="password" placeholder="FirstName" name="password" class="input">
+            <div class="new" id="first">
+                <input type="password" placeholder="FirstName" name="password" class="input" id="four">
             </div>
             
             <div class="new">
                 <label>Mobile</label>
             </div>
 
-            <div class="new">
-                <input type="number" placeholder="FirstName" name="mobile" class="input">
+            <div class="new" id="first">
+                <input type="number" placeholder="FirstName" name="mobile" class="input" id="five">
             </div>
             
             <div class="new">
                 <label>ID-number</label>
             </div>
 
-            <div class="new">
-                <input type="number" placeholder="FirstName" name="id" class="input">
+            <div class="new" id="first">
+                <input type="number" placeholder="FirstName" name="id" class="input" id="six">
             </div>
             
             <div class="new">
                 <label>Country</label>
             </div>
 
-            <div class="new">
-                <input type="text" placeholder="FirstName" name="country" class="input">
+            <div class="new" id="first">
+                <input type="text" placeholder="FirstName" name="country" class="input" id="seven">
             </div>
 
             <div class="submit">

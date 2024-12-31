@@ -1,0 +1,15 @@
+.div1
+{
+    display: inline-block;
+    text-align: center;
+    border-style: solid;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+
+.main
+{
+    text-align: center;
+    display: none;
+}

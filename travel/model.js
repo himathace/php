@@ -1,0 +1,15 @@
+document.addEventListener("DOMContentLoaded",function(){
+    window.onload=function(){
+        document.querySelector(".main").style.display="block"
+        document.addEventListener("keydown",function(value){
+            if(value.key==="Escape"){
+                document.querySelector(".main").style.display="none"
+            }
+        })
+        document.addEventListener("click",function(valuex){
+            if(valuex.target.matches(".main")){
+                document.querySelector(".main").style.display="none"
+            }
+        })
+    }
+})

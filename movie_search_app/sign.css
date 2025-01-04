@@ -70,5 +70,6 @@ body
     border-radius: 5px;
     height: 30px;
     background-color: lightslategray;
+    display: block;
     
 }

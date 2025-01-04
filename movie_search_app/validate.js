@@ -6,9 +6,8 @@ document.addEventListener("DOMContentLoaded",function(){
             newelament.textContent="Not a valid email"
             newelament.style.color="red";
             document.querySelector("#newx").appendChild(newelament)
-            return false
-    
         }
+        return false
     })
     
 })

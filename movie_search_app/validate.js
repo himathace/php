@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded",function(){
-    document.addEventListener("onsubmit",function(){
+    document.querySelector(".form").addEventListener("onsubmit",function(){
         let myvalue=document.querySelector("#validemail").value
         if(!myvalue.includes("@")){
             let newelament=document.createElement("span")

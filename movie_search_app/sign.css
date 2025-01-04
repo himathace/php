@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sixtyfour&display=swap');
+
+
+
+body
+{
+    background-image: url(./images/1303524.jpg);
+    background-size: cover;
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: roboto;
+}
+
+
+.div1
+{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;    
+}
+
+.form
+{
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.button
+{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.but
+{
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: rgb(106, 183, 78);
+    font-size: 18px;
+}
+
+.signu
+{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.label
+{
+    margin-top: 20px;
+    color: white;
+}
+
+.user
+{
+    margin-top: 10px;
+}
+
+.inp
+{
+    width: 250px;
+    border-radius: 5px;
+    height: 30px;
+    background-color: lightslategray;
+    
+}

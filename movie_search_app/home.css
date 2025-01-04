@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sixtyfour&display=swap');
+
+
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: roboto;
+}
+
+body
+{
+    background-image: url("./images/Watch-Free-Hero-2048x1152-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.navigation
+{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    background-color: rgb(2, 2, 2);
+    height: 60px;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+.navigation ul li
+{
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.head
+{
+    color:white;
+}
+
+.search
+{
+    text-decoration: none;
+}
+
